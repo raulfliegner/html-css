@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: auto;
+        }
+        nav {
+            background-color: aqua;
+            padding: 5px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            padding: 3px;
+            margin-right: 20px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: gray;
+            padding: 5px;
+            margin: 10px auto;
+        }
+        aside {
+            background-color: blueviolet;
+            padding: 1px;
+        }
+        footer {
+            padding: 5px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: purple;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- cabeçalho -->
+        <h1>Meu Site</h1>
+        <nav> <!-- navegação -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- conteúdo -->
+        <section id="assuntos">
+            <p>Tecnologia Esportes Política</p>
+        </section>
+
+        <section id="noticias"> <!-- seção -->
+            <article> <!-- artigo -->
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta consequuntur commodi eaque. Voluptatum doloremque dolore, blanditiis a distinctio nisi consequuntur id, neque possimus sapiente in necessitatibus labore pariatur voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur officia natus minus commodi expedita nam consequatur ratione perferendis dolore optio, nemo aperiam placeat incidunt facere molestias consectetur autem iure a!</p>
+                <aside>
+                    Escrito por Raul Fliegner
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias Fora do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officia quis asperiores nesciunt quibusdam similique fuga sunt esse delectus accusamus? Nostrum quia reprehenderit officiis molestiae cum unde veritatis, id quis?</p>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- rodapé -->
+        <p>Desenvolvido por Raul Fliegner</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

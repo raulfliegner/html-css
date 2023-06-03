@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* Tipos de format(): opentype(otf), truetype(ttf), embeded-opentype, truetype-aat(Apple Advanced Typography), svg */
+        @font-face {
+            font-family: 'old london';
+            src: url(fonts/OldLondon.ttf) format(truetype), url(fonts/OldLondonAlternate.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'old london', Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Este é um Exemplo de Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde atque architecto ducimus consequuntur mollitia nostrum animi aliquam, quia dolore. Culpa dignissimos ullam amet tenetur quibusdam et. Esse assumenda adipisci aut.</p>
+</body>
+</html>

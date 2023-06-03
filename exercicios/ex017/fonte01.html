@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas: cm, mm, in (polegadas), px, pt, pc
+            Medidas relativas: em, ex, rem, vh, %
+
+            Recomendação W3C: px e am
+            16px geralmente = 1em
+            */
+            font-size: 16px;
+
+            /*weight(peso), width(largura), height(altura)*/
+
+            font-weight: normal;
+            /*lighter, normal, bold, bolder*/
+        }
+        h1 {
+            /*font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;*/
+            /*SHORTHAND FONT 
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, commodi nihil doloremque est alias recusandae aspernatur cupiditate impedit corporis sapiente repudiandae laudantium perspiciatis voluptatem rerum, officia ducimus suscipit eligendi natus.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, temporibus quisquam deserunt atque vitae labore nam modi recusandae reprehenderit eos sint earum voluptatem praesentium facilis ad laudantium autem molestias a!</p>
+</body>
+</html>
