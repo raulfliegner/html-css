@@ -9,26 +9,61 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
+
         td, th {
             border: 1px solid black;
             padding: 5px;
         }
+
         .numero {
             text-align: right;
+        }
+
+        .titulo {
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+        
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(80, 80, 80);
+        }
+
+        tbody > tr:nth-child(even) { /* even = ímpar */
+            background-color: black;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* odd =  par */
+            background-color: white;
+        }
+        body p {
+            font-size: 5em;
         }
     </style>
 </head>
 <body>
     <h1>Trabalhando com Tabelas Grandes</h1>
+    <!--para conteúdo abaixo do título scope = col(coluna)
+        para conteúdo do lado do título scope = row(linha)-->
     <table>
+        <caption>População das Cidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th>População</th>
+                <th class="titulo" scope="col">Unidade federativa</th>
+                <th class="titulo" scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -55,10 +90,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>População Total</th>
+                <th class="titulo" scope="row">População Total</th>
                 <td class="numero"><strong>101 311 270</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolore similique fugiat error voluptates amet laudantium neque. Ad, modi? Pariatur ipsam voluptate provident est asperiores, nobis quasi illum doloremque inventore?</p>
 </body>
 </html>
