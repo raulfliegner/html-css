@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+        method="GET" -> menos de 4mil bytes, mesma velocidade que o POST, usar para coisas normais
+        method="POST" -> mais de 4mil bytes, mesma velocidade que GET, usar para coisas sensíveis, imagens
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <label for="iNome">Nome: </label>
+            <input type="text" name="Nome" id="iNome">
+        </p>
+        <p>
+            <label for="iSobrenome">Sobrenome: </label>
+            <input type="text" name="Sobrenome" id="iSobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar!">
+        </p>
+    </form>
+</body>
+</html>
