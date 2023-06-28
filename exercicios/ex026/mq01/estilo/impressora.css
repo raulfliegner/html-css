@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* estilo para as impressoras */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+main {
+    text-align: justify;
+}
