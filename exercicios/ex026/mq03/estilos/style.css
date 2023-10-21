@@ -7,7 +7,7 @@
         margin: 0;
     }
     
-    body, html {
+    body {
         background-color: #233EFF;
         width: 100vw;
         height: 100vh;
@@ -21,8 +21,8 @@
 }
 
 /* Configurações para retrato */
-@media screen and (orientatiom: portrait) {
-    body, html {
+@media screen and (orientation: portrait) {
+    body {
         background-image: url(../imagens/cev-portrait.jpg);
         background-repeat: no-repeat;
         background-position: center center;
